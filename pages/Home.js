@@ -1,19 +1,15 @@
-import Gallery from "../components/Gallery"
-// import Map from "../components/Map"
 import data from "../data.json"
+import styles from '../styles/Home.module.css'
 
-import dynamic from 'next/dynamic';
-
-const MapWithNoSSR = dynamic(() => import("../components/Map"), { ssr:false, })
+import Guide from '../components/Guide'
 
 const Home = () => {
     return(
-        <div>
+        <div className={styles.app}>
             <h1>This Was BE-200</h1>
             <h2>Introduction To Built Environments</h2>
             <p>Bruh</p>
-            <MapWithNoSSR data ={data}/>
-            {/* <Gallery data={data}/> */}
+            <Guide data={data}/>
         </div>
     )
 }

@@ -1,11 +1,12 @@
 import 'leaflet/dist/leaflet.css'
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css'
-import "leaflet-defaulticon-compatibility";
+import 'leaflet-defaulticon-compatibility'
+import styles from './Map.module.css'
 
 const Map = (props) => {
     return(
-        <MapContainer center={props.data[0].coords} zoom={13} scrollWheelZoom={true} style={{height:"500px"}}>
+        <MapContainer center={props.data[0].coords} zoom={16} scrollWheelZoom={true} id={styles.map}>
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

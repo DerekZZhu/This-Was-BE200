@@ -10,3 +10,8 @@
     filter: invert(1);
   }
 }
+
+
+.app {
+  padding: 3vh 5vw;
+}
