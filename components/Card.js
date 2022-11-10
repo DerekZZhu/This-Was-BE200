@@ -1,13 +1,13 @@
 import styles from './Gallery.module.css'
 const Card = (props) => {
     return(
-        <div className={styles.card} id={props.id}>
-            <div className="card-face card-face-front" id={props.id} style={{backgroundImage:props.color}}>
-                <div class="card-image" style={{backgroundImage:props.img}}></div>
-                    <h2 id={props.id}>{props.location}</h2>
+        <div className={styles.card} id={props.key}>
+            <div className={`${styles.card_face} ${styles.card_face_front}`} id={props.key} style={{backgroundImage:props.color}}>
+                <div className={styles.card_image} style={{backgroundImage:`url('${props.img}')`}}></div>
+                    <h2 id={props.key}>{props.location}</h2>
                 </div>
-                <div class="card-face card-face-back" id={props.id} style={{backgroundImage:props.color}}>
-                    <p class="card-details" id={props.id}>
+                <div className={`${styles.card_face} ${styles.card_face_back}`} id={props.key} style={{backgroundImage:props.color}}>
+                    <p className={styles.card_details} id={props.key}>
                         {props.text}
                     </p>
             </div>

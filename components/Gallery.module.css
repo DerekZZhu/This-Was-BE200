@@ -7,7 +7,7 @@
 }
 
 #scroll::-webkit-scrollbar {display: none;}
-.card-face-back::-webkit-scrollbar {display: none;}
+.card_face_back::-webkit-scrollbar {display: none;}
 
 .card {
     perspective: 150rem;
@@ -28,7 +28,7 @@
     }
 }
 
-.card-face {
+.card_face {
     color: white;
     height: 100%;
     transition: all .8s ease;
@@ -42,22 +42,22 @@
     padding: 0.5rem;
 }
 
-.card-details {
+.card_details {
     margin: 0;
 }
 /* .card-face-front {
     
 } */
-.card-face-back {
+.card_face_back {
     transform: rotateY(180deg);
     overflow-y: auto;
 }
 
-.card:hover .card-face-front {
+.card:hover .card_face_front {
     transform: rotateY(180deg);
 }
 
-.card:hover .card-face-back {
+.card:hover .card_face_back {
     transform: rotateY(0deg);
 }
 
@@ -69,7 +69,7 @@
     margin-right: 0;
 }
 
-.card-image {
+.card_image {
     border-radius: 4px;
     background-size: cover;
     background-position: center;
