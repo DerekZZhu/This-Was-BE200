@@ -7,9 +7,17 @@ const Gallery = (props) => {
     return(
         <div id={styles.scroll}>
             {
-                props.data.map((data_i, i) => {
-                    var index = i%lighter.length;
-                    return <Card key={i} img={data_i.img} text={data_i.text} location={data_i.name} color={`linear-gradient(to right bottom, ${lighter[index]}, ${darker[index]})`}/>
+                props.data.map((data_i, index) => {
+                    var cindex = index%lighter.length;
+                    return( <Card 
+                        num={index} 
+                        img={data_i.img} 
+                        text={data_i.text} 
+                        location={data_i.name} 
+                        color={`linear-gradient(to right bottom, ${lighter[cindex]}, ${darker[cindex]})`}
+                        passup={props.updateTarget}
+                        key={index}
+                        />)
                 })
             }
         </div>
