@@ -29,10 +29,6 @@ const Map = () => {
     }, []);
 
     useEffect(() => {
-        L.control.layers({
-            OpenStreetMap: tileRef.current
-        }).addTo(mapRef.current);
-
         L.control.zoom({
             position: "topright"
         }).addTo(mapRef.current);
