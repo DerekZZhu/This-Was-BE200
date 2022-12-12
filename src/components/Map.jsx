@@ -37,7 +37,7 @@ const Map = () => {
     return (
         <div>
             <div id="map" style={mapStyles}/>
-            <button onClick={() => {mapRef.current.flyTo([38.0902, -95.7129])}}>Flyto</button>
+            <button onClick={() => {mapRef.current.flyTo([38.0902, -95.7129], 18)}}>Flyto</button>
         </div>
     )
 }

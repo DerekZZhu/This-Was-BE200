@@ -1,0 +1,36 @@
+.card-face {
+  color: white;
+  height: 100%;
+  transition: all .8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 2%;
+}
+
+.card-details {
+  margin: 0;
+}
+.card-face-front {
+  background-color: orangered;
+}
+
+.card-face-back {
+  transform: rotateY(180deg);
+  background-color: orangered;
+  overflow-y: auto;
+}
+
+.card-image {
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  /* background-size: 100% 100%; */
+  height: 75%;
+}
