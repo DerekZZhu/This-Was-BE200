@@ -10,6 +10,8 @@ function App() {
         name="Union Square"
         info="YUMYUMYUM"
         coords={[37.78755, -122.40661]}
+        sec="#EA005E"
+        pri="#E74856"
       />
     </div>
   );
