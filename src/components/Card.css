@@ -4,7 +4,7 @@
   position: relative;
   height: 95%;
   min-width: 25%;
-  width:25%;
+  width: 25%;
   margin: 0 1rem;
   /* padding: 0.5rem; */
 }
@@ -53,8 +53,8 @@
 }
 
 .card-details {
-  margin-left: 3%;
-  margin-top: 3%;
+  margin: 3%;
+  margin-right: 0;
 }
 
 .card:first-child {
