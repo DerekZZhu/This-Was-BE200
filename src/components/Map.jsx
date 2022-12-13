@@ -12,7 +12,7 @@ const Map = (props) => {
     });
     
     const mapParams = {
-        center: [37.0902, -95.7129],
+        center: props.data[0].coords,
         zoom: 13,
         zoomControl: false,
         maxBounds: L.latLngBounds(L.latLng(-150, -240), L.latLng(150, 240)),
@@ -22,6 +22,9 @@ const Map = (props) => {
 
     useEffect(() => {
         mapRef.current = L.map("map", mapParams);
+        props.data.map(location => {
+            L.marker(location.coords).addTo(mapRef.current)
+        })
     }, []);
 
     useEffect(() => {
@@ -36,6 +39,7 @@ const Map = (props) => {
             <div id="gallery">
                 {
                     props.data.map((location, i) => {
+                        console.log(location.coords);
                         return(
                             <Card 
                                 image={location.img}
