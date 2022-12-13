@@ -7,13 +7,16 @@ const Map = (props) => {
     const mapRef = useRef(null)
     const tileRef = useRef(null)
 
+    const primaryColors = props.theme.primary
+    const secondaryColors = props.theme.secondary
+
     tileRef.current = L.tileLayer(`https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png`, {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     });
     
     const mapParams = {
         center: props.data[0].coords,
-        zoom: 13,
+        zoom: 15,
         zoomControl: false,
         maxBounds: L.latLngBounds(L.latLng(-150, -240), L.latLng(150, 240)),
         closePopupOnClick: false,
@@ -39,15 +42,14 @@ const Map = (props) => {
             <div id="gallery">
                 {
                     props.data.map((location, i) => {
-                        console.log(location.coords);
                         return(
                             <Card 
                                 image={location.img}
                                 name={location.name}
                                 info={location.text}
                                 coords={location.coords}
-                                sec="#EA005E"
-                                pri="#E74856"
+                                sec={secondaryColors[i%secondaryColors.length]}
+                                pri={primaryColors[i%primaryColors.length]}
                                 key={i}
                                 reference={mapRef}
                             />

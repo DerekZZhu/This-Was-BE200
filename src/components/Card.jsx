@@ -1,10 +1,8 @@
 import './Card.css'
-import {Fragment, useState} from 'react'
+import {useState} from 'react'
 const Card = (props) => {
     const [isActive, setIsActive] = useState(false)
-    const coords = props.coords
     const backdrop = `linear-gradient(to right bottom, ${props.pri}, ${props.sec})`
-    console.log(coords);
 
     function handleClick() {
         setIsActive(isActive?false:true)
