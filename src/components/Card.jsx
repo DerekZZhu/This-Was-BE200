@@ -8,10 +8,11 @@ const Card = (props) => {
 
     function handleClick() {
         setIsActive(isActive?false:true)
+        props.reference.current.flyTo(props.coords, 18)
     }
 
     return(
-        <Fragment>
+        <div className='card'>
             <div className="card-face card-face-front" onClick={handleClick} style={{transform: isActive?'rotateY(180deg)':'', backgroundImage:backdrop}}>
                 <div className="card-image" style={{backgroundImage:`url('${props.image}')`}}></div>
                 <h2 className="card-name">{props.name}</h2>
@@ -19,7 +20,7 @@ const Card = (props) => {
             <div className="card-face card-face-back" onClick={handleClick} style={{transform: isActive?'rotateY(0deg)':'', backgroundImage:backdrop}}>
                 <p className="card-details">{props.info}</p>
             </div>
-        </Fragment>
+        </div>
     )
 }
 

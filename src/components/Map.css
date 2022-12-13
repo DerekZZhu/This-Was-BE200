@@ -1,0 +1,20 @@
+.display {
+    height: 100vh;
+    padding: 1rem 3rem;
+}
+
+#map {
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+}
+
+#gallery {
+    /* margin-top: 3vh; */
+    height: 45vh;
+    padding: 1rem 0;
+    overflow-x: auto;
+    display: flex;
+}
+
+#gallery::-webkit-scrollbar {display: none;}

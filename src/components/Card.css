@@ -1,3 +1,14 @@
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 95%;
+  min-width: 20%;
+  /* width:20%; */
+  /* margin: 0 1rem; */
+  /* padding: 0.5rem; */
+}
+
 .card-face {
   color: white;
   height: 100%;
@@ -24,6 +35,8 @@
   background-color: orangered;
   overflow-y: auto;
 }
+
+.card-face-back::-webkit-scrollbar {display: none;}
 
 .card-image {
   border-radius: 4px;
