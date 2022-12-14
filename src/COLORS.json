@@ -2,29 +2,5 @@
     "rainbow": {
         "primary":["#E74856", "#ffb900", "#FDE047", "#7ed56f", "#22D3EE", "#818CF8", "#2998ff"],
         "secondary":["#EA005E", "#ff7730", "#EAB308", "#28b485", "#0EA5E9", "#8B5CF6", "#5643fa"]
-    },
-
-    "historical": {
-
-    }, 
-
-    "eco": {
-
-    },
-
-    "public": {
-
-    },
-
-    "mobile": {
-
-    },
-
-    "global": {
-
-    }, 
-
-    "gentry": {
-        
     }
 }
