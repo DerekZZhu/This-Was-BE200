@@ -32,7 +32,7 @@ const Nav = (props) => {
                         <>
                             <Link to='/create'>CREATE</Link>
                             <div className='toggle' onClick={handleClick}>{isDark?<FaSun style={{color:"white"}}/>:<FaMoon/>}</div>
-                            <Link to='/account' className='link'><div className='account'><FaBiohazard/></div></Link>
+                            <Link to='/account'><div className='account'><FaBiohazard/></div></Link>
                         </>
                     )
                 }
