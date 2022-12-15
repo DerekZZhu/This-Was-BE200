@@ -1,0 +1,23 @@
+.iv {
+    padding: 1rem 1rem;
+    margin: 2%;
+
+    background-color: bisque;
+    
+    width: 90%;
+    border-radius: 25px;
+
+    transition: flex 1s ease-in-out;
+}
+
+.iv_grow {
+    flex-grow: 2;
+    /* height: 20%; */
+}
+
+/* FaHistory */
+/* FaLeaf */
+/* FaShoppingCart */
+/* FaBusAlt */
+/* FaGlobeAmericas */
+/* FaCity */

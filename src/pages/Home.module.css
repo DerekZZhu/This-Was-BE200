@@ -7,6 +7,10 @@ h1 {
     font-size: 4rem;
 }
 
+h2:first-child {
+    margin-top: 0;
+}
+
 .main {
     background-image: var(--background-img);
     background-position: center;
@@ -29,15 +33,17 @@ h1 {
 
 .about > * {
     padding: 1rem;
+    width: 50%;
 }
 
 .about_left {
-    width: 50%;
-    padding: 1rem;
-    padding-right: 50vw;
+
 }
 
 .about_right {
     display: flex;
     flex-direction: column;
+
+    display: flex;
+    align-items: center;
 }

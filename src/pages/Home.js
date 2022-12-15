@@ -1,6 +1,15 @@
 import styles from './Home.module.css'
+import PCard from '../components/PCard'
+import { useState } from 'react'
 const Home = () => {
-    const cob= ["Sakura", "Iris", "Cherry"]
+    const cob= ["University City", "Historic City", "Green City", "Public City", "Mobile City", "Global City", "Gentrifying City"]
+    
+    const[activeIndex, setActiveIndex] = useState(1)
+    console.log(activeIndex);
+    function updateActiveIndex(index) {
+        setActiveIndex(index)
+    }
+
     return(
         <div className={styles.home_page}>
             <section className={styles.main}>
@@ -38,9 +47,7 @@ const Home = () => {
                     {
                         cob.map((item, i) => {
                             return(
-                                <div>
-                                    {item}
-                                </div>
+                                <PCard key={i} keyII={i} isActive={activeIndex===i?true:false} passup={updateActiveIndex}>{item}</PCard>
                             )
                         })
                     }
