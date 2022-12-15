@@ -1,14 +1,14 @@
 import './Nav.css'
+import '../index.css'
 import {Link} from 'react-router-dom'
 import {useState} from 'react'
 import {FaSun, FaMoon, FaBiohazard, FaWalking} from 'react-icons/fa'
 
 const Nav = (props) => {
     const user = null;
-    const [isDark, setIsDark] = useState(false)
 
-    function handleClick() {
-        setIsDark(!isDark)
+    function handleClick() {    
+        props.passup(!props.theme)
     }
 
     return(
@@ -22,7 +22,7 @@ const Nav = (props) => {
                     !user && (
                         <>
                             <Link to='/signup'>LOGIN</Link>
-                            <div className='toggle' onClick={handleClick}>{isDark?<FaSun style={{color:"white"}}/>:<FaMoon/>}</div>
+                            <div className='toggle' onClick={handleClick}>{props.theme?<FaSun style={{color:"white"}}/>:<FaMoon/>}</div>
                         </>
                     )
                 }
@@ -31,7 +31,7 @@ const Nav = (props) => {
                     user && (
                         <>
                             <Link to='/create'>CREATE</Link>
-                            <div className='toggle' onClick={handleClick}>{isDark?<FaSun style={{color:"white"}}/>:<FaMoon/>}</div>
+                            <div className='toggle' onClick={handleClick}>{props.theme?<FaSun style={{color:"white"}}/>:<FaMoon/>}</div>
                             <Link to='/account'><div className='account'><FaBiohazard/></div></Link>
                         </>
                     )

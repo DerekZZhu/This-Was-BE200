@@ -13,3 +13,18 @@ code {
     monospace;
 }
 
+:root {
+  --background: white;
+  --background-secondary: #ecf0f1;
+  --text-primary: black;
+  --text-secondary: royalblue;
+  --accent: purple;
+  --background-img: url('https://www.history.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTU3ODc4NjAzNTE0NDU1MzY5/windycindy-2.jpg')
+}
+
+[data-theme='dark'] {
+  --background-secondary: #3c3d41;
+  --background: rgb(33, 33, 33);
+  --text-primary: white;
+  --background-img: url('https://i.redd.it/mdvmefeejg331.jpg')
+}
