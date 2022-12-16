@@ -1,13 +1,16 @@
 .iv {
     padding: 1rem 1rem;
-    margin: 2%;
+    margin: 1%;
 
-    background-color: bisque;
+    background-color: var(--text-primary);
     
     width: 90%;
     border-radius: 25px;
 
     transition: flex 1s ease-in-out;
+
+    background-position: center;
+    background-size: cover;
 }
 
 .iv_grow {
@@ -15,9 +18,14 @@
     /* height: 20%; */
 }
 
-/* FaHistory */
-/* FaLeaf */
-/* FaShoppingCart */
-/* FaBusAlt */
-/* FaGlobeAmericas */
-/* FaCity */
+.icon_wrapper {
+    font-size: 150%;
+    background-color: white;
+    width: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    border-radius: 100%;
+}

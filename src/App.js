@@ -60,7 +60,7 @@ function App() {
     //     </Route>
     //   </Switch> */}
       <Nav theme={isDark} passup={toggleTheme}/>
-      <Home/>
+      <Home theme={isDark}/>
     </div>
   );
 }

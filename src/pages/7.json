@@ -1,0 +1,51 @@
+[
+    {
+        "name":"University City",
+        "icon":"FaUniversity",
+        "bg_img_light":"https://artsci.washington.edu/sites/default/files/2022-02/About-main1.1.jpg",
+        "bg_img_dark":"https://i.pinimg.com/originals/00/25/db/0025db4dd4399fb14ed0b5f76bc59e9c.jpg",
+        "color":"#9b59b6"
+    },
+    {
+        "name":"Historic City",
+        "icon":"FaHistory",
+        "bg_img_light":"https://upload.wikimedia.org/wikipedia/commons/4/41/Pioneer_Square_from_Columbia_Center.jpg",
+        "bg_img_dark":"https://tourscanner.com/blog/wp-content/uploads/2021/05/Smith-Tower-Observatory-Seattle.jpg",
+        "color":"#e67e22"
+    },
+    {
+        "name":"Green City",
+        "icon":"FaLeaf",
+        "bg_img_light":"http://seattlebloggers.com/wp-content/uploads/2014/10/union-bay-4.jpg",
+        "bg_img_dark":"https://c.wallhere.com/photos/20/25/city_pond_Central_Park_New_York_City-84473.jpg!d",
+        "color":"#2ecc71"
+    },
+    {
+        "name":"Public City",
+        "icon":"FaShoppingCart",
+        "bg_img_light":"https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,q_75,w_1200/https://assets.simpleviewinc.com/simpleview/image/upload/crm/seattlesouthside/Pike_Place_Market0-f58b040db89934b_f58b0ced-b1ca-91aa-c34e643859c15cd1.jpg",
+        "bg_img_dark":"https://youimg1.tripcdn.com/target/fd/tg/g4/M08/CC/1B/CggYHFaMgRGAX8W8AC6ZjMocWF4992.jpg?proc=source%2Ftrip",
+        "color":"#f1c40f"
+    },
+    {
+        "name":"Mobile City",
+        "icon":"FaBusAlt",
+        "bg_img_light":"https://www.hotelscombined.com/rimg/dimg/70/8c/72f620d1-hood-208783-17564545144.jpg?width=1200&height=630&xhint=2751&yhint=1309&crop=true",
+        "bg_img_dark":"https://insightpestnorthwest.com/wp-content/uploads/2018/11/yokohama-2223502_1280-1.jpg",
+        "color":"#34495e"
+    },
+    {
+        "name":"Global City",
+        "icon":"FaGlobeAmericas",
+        "bg_img_light":"https://media.architecturaldigest.com/photos/601af60bec6404d96c7d30ab/16:9/w_2560%2Cc_limit/02.jpg",
+        "bg_img_dark":"https://assets.aboutamazon.com/dims4/default/31b29f9/2147483647/strip/true/crop/1333x1333+334+0/resize/800x800!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F75%2F53%2F97d1c9a54c00b30f6bd6566ce917%2Farlington-render.jpg",
+        "color":"#3498db"
+    },
+    {
+        "name":"Gentrifying City",
+        "icon":"FaCity",
+        "bg_img_light":"https://whatcomwebsite-inflightstudio.netdna-ssl.com/wp-content/uploads/sites/15/2013/10/ChophouseRow_mewsTonyKim.jpg",
+        "bg_img_dark":"https://images.squarespace-cdn.com/content/v1/58055015e6f2e1484efdac2b/1516126348198-0UUWSKUVXGFP13PKIAOK/170826_0834.jpg?format=1500w",
+        "color":"#e74c3c"
+    }
+]

@@ -1,9 +1,11 @@
 import styles from './Home.module.css'
 import PCard from '../components/PCard'
 import { useState } from 'react'
-const Home = () => {
-    const cob= ["University City", "Historic City", "Green City", "Public City", "Mobile City", "Global City", "Gentrifying City"]
-    
+import React from 'react'
+import * as FontAwesome from "react-icons/fa";
+
+import data from './7.json'
+const Home = (props) => {
     const[activeIndex, setActiveIndex] = useState(1)
     console.log(activeIndex);
     function updateActiveIndex(index) {
@@ -44,13 +46,27 @@ const Home = () => {
                     </p>
                 </div>
                 <div className={styles.about_right}>
-                    {
-                        cob.map((item, i) => {
-                            return(
-                                <PCard key={i} keyII={i} isActive={activeIndex===i?true:false} passup={updateActiveIndex}>{item}</PCard>
-                            )
-                        })
-                    }
+                    <div className={styles.card_wrapper}>
+                        {
+                            data.map((item, i) => {
+                                const icon = React.createElement(FontAwesome[item.icon])
+                                return(
+                                    <PCard 
+                                        key={i} 
+                                        keyII={i} 
+                                        isActive={activeIndex===i?true:false} 
+                                        passup={updateActiveIndex}
+                                        
+                                        icon={icon}
+                                        name={item.name}
+                                        color={item.color}
+                                        bg_img={props.theme?item.bg_img_dark:item.bg_img_light}
+                                    >
+                                    </PCard>
+                                )
+                            })
+                        }
+                    </div>
                 </div>
             </section>
 

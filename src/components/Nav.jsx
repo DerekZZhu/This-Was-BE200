@@ -1,7 +1,6 @@
 import './Nav.css'
 import '../index.css'
 import {Link} from 'react-router-dom'
-import {useState} from 'react'
 import {FaSun, FaMoon, FaBiohazard, FaWalking} from 'react-icons/fa'
 
 const Nav = (props) => {
