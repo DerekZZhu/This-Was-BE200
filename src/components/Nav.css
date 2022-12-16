@@ -10,6 +10,7 @@
     padding: 1vh 0;
     /* border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px; */
+    z-index: 999;
 }
 
 .nav-menu {
