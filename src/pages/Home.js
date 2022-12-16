@@ -61,6 +61,8 @@ const Home = (props) => {
                                         name={item.name}
                                         color={item.color}
                                         bg_img={props.theme?item.bg_img_dark:item.bg_img_light}
+                                        link={item.link}
+                                        theme={props.theme}
                                     >
                                     </PCard>
                                 )
