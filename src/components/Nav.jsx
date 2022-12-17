@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 import {FaSun, FaMoon, FaBiohazard, FaWalking} from 'react-icons/fa'
 
 const Nav = (props) => {
-    const user = null;
+    const user = "Tom";
 
     function handleClick() {    
         props.passup(!props.theme)
@@ -31,7 +31,7 @@ const Nav = (props) => {
                         <>
                             <Link to='/create'>CREATE</Link>
                             <div className='toggle' onClick={handleClick}>{props.theme?<FaSun style={{color:"white"}}/>:<FaMoon/>}</div>
-                            <Link to='/account'><div className='account'><FaBiohazard/></div></Link>
+                            <Link to='/account'><div className='account'><FaBiohazard style={{color:"red"}}/></div></Link>
                         </>
                     )
                 }

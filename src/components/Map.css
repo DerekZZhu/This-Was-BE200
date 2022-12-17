@@ -1,12 +1,14 @@
 .display {
     height: 96vh;
     padding: 2vh 3rem;
+    background-color: var(--background-secondary);
 }
 
 #map {
     overflow: hidden;
     width: 100%;
     height: 50%;
+    border-radius: 7px;
 }
 
 #gallery {

@@ -7,8 +7,8 @@ const Map = (props) => {
     const mapRef = useRef(null)
     const tileRef = useRef(null)
 
-    const primaryColors = props.theme.primary
-    const secondaryColors = props.theme.secondary
+    const primaryColors = props.card_theme.primary
+    const secondaryColors = props.card_theme.secondary
 
     tileRef.current = L.tileLayer(`https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png`, {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

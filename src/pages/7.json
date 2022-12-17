@@ -13,7 +13,12 @@
         "bg_img_light":"https://upload.wikimedia.org/wikipedia/commons/4/41/Pioneer_Square_from_Columbia_Center.jpg",
         "bg_img_dark":"https://tourscanner.com/blog/wp-content/uploads/2021/05/Smith-Tower-Observatory-Seattle.jpg",
         "color":"#e67e22",
-        "link":"/historic-walk"
+        "link":"/historic-walk",
+        "walk_content":
+        [
+            {},
+            {}
+        ]
     },
     {
         "name":"Green City",
