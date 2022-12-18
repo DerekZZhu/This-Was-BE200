@@ -1,17 +1,17 @@
 import styles from './UCard.module.css'
-import {FaMapMarkerAlt, FaServer} from 'react-icons/fa'
+import {FaMapMarkerAlt} from 'react-icons/fa'
 const UCard = (props) => {
     return(
         <div className={styles.ucard}>
-            <div className={styles.top} >
-                <h2 className={styles.center}><FaMapMarkerAlt/><span className={styles.heading}>Seattle</span></h2>
+            <div className={styles.top} style={{backgroundImage:`linear-gradient(to bottom, ${props.theme?"#1e272e":"rgba(0,0,0,0)"}, transparent), url('${props.bg_img}')`}}>
+                <h2 className={styles.center}><FaMapMarkerAlt/><span className={styles.heading}>{props.city}</span></h2>
             </div>
             <div className={styles.bottom}>
                 <div className={styles.bottom_wrapper}>
-                    <div className={styles.icon}><FaServer/></div>
-                    <h2 className={styles.name}>Historic City</h2>
+                    <div className={styles.icon}>{props.icon}</div>
+                    <h2 className={styles.name}>{props.map_name}</h2>
                 </div>
-                <p className={styles.author}>Author: Bryan</p>
+                <p className={styles.author}>Author: {props.author}</p>
             </div>
         </div>
     )

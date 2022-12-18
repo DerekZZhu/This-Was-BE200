@@ -2,7 +2,8 @@
     display: flex;
     border-radius: 8px;
     box-shadow: 0 8px 32px -8px rgba(128, 128, 128, 0.5);
-    height: 100%;
+    height: 320px;
+    width: 270px;
 
     display: flex;
     flex-direction: column;
@@ -19,8 +20,6 @@
 
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-
-    background-image: linear-gradient(to bottom, #1e272e, transparent), url("https://upload.wikimedia.org/wikipedia/commons/4/41/Pioneer_Square_from_Columbia_Center.jpg");
 }
 
 .bottom {

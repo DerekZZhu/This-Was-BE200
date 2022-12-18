@@ -50,7 +50,7 @@ function App() {
          </Route>
 
          <Route path="/guides" exact>
-            <Explore/>
+            <Explore theme={isDark}/>
          </Route>
 
          <Route path="/historic-walk">
