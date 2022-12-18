@@ -37,6 +37,10 @@
     margin-left: 2%;
 }
 
+.navbar a:first-child {
+    margin-left: 0;
+}
+
 .last {
     margin-right: 7%;
 }

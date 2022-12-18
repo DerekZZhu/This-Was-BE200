@@ -3,6 +3,7 @@ import React from 'react'
 
 import Map from './components/Map.jsx'
 import Home from './pages/Home.js'
+import Explore from './pages/Explore'
 import Nav from './components/Nav.jsx'
 
 import data from './data.json'
@@ -49,7 +50,7 @@ function App() {
          </Route>
 
          <Route path="/guides" exact>
-
+            <Explore/>
          </Route>
 
          <Route path="/historic-walk">

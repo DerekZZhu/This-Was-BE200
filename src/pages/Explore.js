@@ -1,17 +1,20 @@
-
+import styles from './Explore.module.css'
+import UCard from '../components/UCard'
 const Explore = () => {
+    const bruh = [1, 2, 3, 4, 5, 6, 7, 8]
     return(
-        <div>
-            <section className="top-picks">
+        <div className={styles.explore}>
+            <div className>
 
-            </section>
-            <section className="content">
-                <div className="filter">
-
-                </div>
-                <div className="grid">
-
-                </div>
+            </div>
+            <section className={styles.gallery}>
+                {
+                    bruh.map((i) => {
+                        return(
+                            <UCard>{i}</UCard>
+                        )
+                    })
+                }
             </section>
         </div>
     )
