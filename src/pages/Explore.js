@@ -2,6 +2,7 @@ import styles from './Explore.module.css'
 import UCard from '../components/UCard'
 
 import React from 'react'
+import { Link } from 'react-router-dom'
 import * as FontAwesome from "react-icons/fa";
 
 import data from './explore.json';
@@ -18,17 +19,20 @@ const Explore = (props) => {
                     data.map((item, i) => {
                         const icon = React.createElement(FontAwesome[item.icon])
                         return(
-                            <UCard
-                                icon={icon}
-                                author={item.author}
-                                city={item.city}
-                                bg_img={item.bg_img}
-                                map_name={item.map_name}
+                            <Link to={item.link} className={styles.link}>
+                                <UCard
+                                    icon={icon}
+                                    author={item.author}
+                                    city={item.city}
+                                    bg_img={item.bg_img}
+                                    map_name={item.name}
+                                    color={item.color}
 
-                                key={i}
-                                theme={props.theme}
-                            >
-                            </UCard>
+                                    key={i}
+                                    theme={props.theme}
+                                >
+                                </UCard>
+                            </Link>
                         )
                     })
                 }

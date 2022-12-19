@@ -1,44 +1,88 @@
 [
     {
-        "city":"Night City",
-        "map_name":"Tech City",
-        "icon": "FaServer",
-        "author": "Derek",
-        "bg_img": "https://i.redd.it/mdvmefeejg331.jpg"
+        "name":"Historic City",
+        "city":"Seattle",
+        "icon":"FaHistory",
+        "bg_img":"https://upload.wikimedia.org/wikipedia/commons/4/41/Pioneer_Square_from_Columbia_Center.jpg",
+        "bg_img_dark":"https://tourscanner.com/blog/wp-content/uploads/2021/05/Smith-Tower-Observatory-Seattle.jpg",
+        "color":"#e67e22",
+        "link":"/historic-walk",
+        "author":"UW BE-200"
+    },
+    {
+        "name":"Green City",
+        "city":"Seattle",
+        "icon":"FaLeaf",
+        "bg_img":"http://seattlebloggers.com/wp-content/uploads/2014/10/union-bay-4.jpg",
+        "bg_img_dark":"https://c.wallhere.com/photos/20/25/city_pond_Central_Park_New_York_City-84473.jpg!d",
+        "color":"#2ecc71",
+        "link":"/green-walk",
+        "author":"UW BE-200"    
+    },
+    {
+        "name":"Public City",
+        "city":"Seattle",
+        "icon":"FaShoppingCart",
+        "bg_img":"https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,q_75,w_1200/https://assets.simpleviewinc.com/simpleview/image/upload/crm/seattlesouthside/Pike_Place_Market0-f58b040db89934b_f58b0ced-b1ca-91aa-c34e643859c15cd1.jpg",
+        "bg_img_dark":"https://youimg1.tripcdn.com/target/fd/tg/g4/M08/CC/1B/CggYHFaMgRGAX8W8AC6ZjMocWF4992.jpg?proc=source%2Ftrip",
+        "color":"#f1c40f",
+        "link":"/public-walk",
+        "author":"UW BE-200"
+    },
+    {
+        "name":"Mobile City",
+        "city":"Seattle",
+        "icon":"FaBusAlt",
+        "bg_img":"https://www.hotelscombined.com/rimg/dimg/70/8c/72f620d1-hood-208783-17564545144.jpg?width=1200&height=630&xhint=2751&yhint=1309&crop=true",
+        "bg_img_dark":"https://insightpestnorthwest.com/wp-content/uploads/2018/11/yokohama-2223502_1280-1.jpg",
+        "color":"#34495e",
+        "link":"/mobile-walk",
+        "author":"UW BE-200"
+    },
+    {
+        "name":"Global City",
+        "city":"Seattle",
+        "icon":"FaGlobeAmericas",
+        "bg_img":"https://media.architecturaldigest.com/photos/601af60bec6404d96c7d30ab/16:9/w_2560%2Cc_limit/02.jpg",
+        "bg_img_dark":"https://assets.aboutamazon.com/dims4/default/31b29f9/2147483647/strip/true/crop/1333x1333+334+0/resize/800x800!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F75%2F53%2F97d1c9a54c00b30f6bd6566ce917%2Farlington-render.jpg",
+        "color":"#3498db",
+        "link":"/global-walk",
+        "author":"UW BE-200"
+    },
+    {
+        "name":"Gentrifying City",
+        "city":"Seattle",
+        "icon":"FaCity",
+        "bg_img":"https://whatcomwebsite-inflightstudio.netdna-ssl.com/wp-content/uploads/sites/15/2013/10/ChophouseRow_mewsTonyKim.jpg",
+        "bg_img_dark":"https://images.squarespace-cdn.com/content/v1/58055015e6f2e1484efdac2b/1516126348198-0UUWSKUVXGFP13PKIAOK/170826_0834.jpg?format=1500w",
+        "color":"#e74c3c",
+        "link":"/gentrifying-walk",
+        "author":"UW BE-200"
     },
     {
         "city":"Night City",
-        "map_name":"Tech City",
+        "name":"Tech City",
         "icon": "FaServer",
         "author": "Derek",
-        "bg_img": "https://i.redd.it/mdvmefeejg331.jpg"
-    },
+        "bg_img": "https://i.redd.it/mdvmefeejg331.jpg",
+        "link":"/tech-walk"
+    }, 
     {
         "city":"Night City",
-        "map_name":"Tech City",
-        "icon": "FaServer",
-        "author": "Derek",
-        "bg_img": "https://i.redd.it/mdvmefeejg331.jpg"
-    },
+        "name":"Nihon City",
+        "icon": "FaCircle",
+        "color": "red",
+        "author":"Ronald",
+        "bg_img": "https://preview.redd.it/qeyfc3b4spf61.png?auto=webp&s=2273b48ae2fd0ec65f40fc640d8388c9002feb49",
+        "link":"/nihon-walk"
+    }, 
     {
         "city":"Night City",
-        "map_name":"Tech City",
-        "icon": "FaServer",
-        "author": "Derek",
-        "bg_img": "https://i.redd.it/mdvmefeejg331.jpg"
-    },
-    {
-        "city":"Night City",
-        "map_name":"Tech City",
-        "icon": "FaServer",
-        "author": "Derek",
-        "bg_img": "https://i.redd.it/mdvmefeejg331.jpg"
-    },
-    {
-        "city":"Night City",
-        "map_name":"Tech City",
-        "icon": "FaServer",
-        "author": "Derek",
-        "bg_img": "https://i.redd.it/mdvmefeejg331.jpg"
+        "name":"Engineering",
+        "icon":"FaWrench",
+        "color":"grey",
+        "author":"Bryan",
+        "bg_img":"https://miro.medium.com/max/1400/1*VX1h2zQoRVAf-sG56yclMA.png",
+        "link":"/engineering-walk"
     }
 ]

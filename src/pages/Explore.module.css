@@ -1,15 +1,19 @@
 .explore {
-    height: 88vh;
-    padding: 1vw 5vw;
+    /* height: 88vh; */
+    padding: 1vw 10vw;
     background-color: var(--background-secondary);
 }
 
 .gallery {
     display: grid;
-    grid-template-columns:  repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: repeat(auto-fit, 3);
+    grid-template-columns: repeat(auto-fill, minmax(270px, 0.5em));
+
     grid-gap: 1em;
     justify-content: center;
 
-    height: 100%;
+    height: 80%;
+}
+
+.link {
+    text-decoration: none;
 }

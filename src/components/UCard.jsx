@@ -8,7 +8,7 @@ const UCard = (props) => {
             </div>
             <div className={styles.bottom}>
                 <div className={styles.bottom_wrapper}>
-                    <div className={styles.icon}>{props.icon}</div>
+                    <div className={styles.icon} style={{color:`${props.color}`}}>{props.icon}</div>
                     <h2 className={styles.name}>{props.map_name}</h2>
                 </div>
                 <p className={styles.author}>Author: {props.author}</p>
