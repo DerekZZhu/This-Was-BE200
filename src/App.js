@@ -2,8 +2,11 @@ import { Route, Switch } from 'react-router-dom';
 import React from 'react'
 
 import Map from './components/Map.jsx'
+
 import Home from './pages/Home.js'
 import Explore from './pages/Explore'
+import Create from './pages/Create'
+import Login from './pages/Login'
 import Nav from './components/Nav.jsx'
 
 import data from './data.json'
@@ -51,6 +54,14 @@ function App() {
 
          <Route path="/guides" exact>
             <Explore theme={isDark}/>
+         </Route>
+
+         <Route>
+            <Create theme={isDark}/>
+         </Route>
+
+         <Route path="/login">
+            <Login/>
          </Route>
 
          <Route path="/historic-walk">
