@@ -27,7 +27,6 @@ const Create = (props) => {
 
     const originRef = useRef()
     const destinationRef = useRef()
-    const containerRef = useRef([])
 
     if (!isLoaded) {
         console.log("not loaded");
@@ -37,41 +36,39 @@ const Create = (props) => {
     async function calculateRoute() {
         if (originRef.current.value === '' || destinationRef.current.value === '') {
             return
-        }
-        console.log(originRef.current.value);
+        }  
+        console.log(wayPoints);
         const directionService = new google.maps.DirectionsService()
         const results = await directionService.route({
             origin: originRef.current.value,
             destination: destinationRef.current.value,
-            travelMode: google.maps.TravelMode.DRIVING
+            travelMode: google.maps.TravelMode.DRIVING,
+            waypoints: updateWaypoints()
         })
         setDirectionResponse(results)
         setDistance(results.routes[0].legs[0].distance.text)
         setDuration(results.routes[0].legs[0].duration.text)
     }
 
-    const handleInputChange = (index, event) => {
-        let data = [...wayPoints]
-        data[index] = document.getElementById(index).value
-        setWayPoints(data);
-    }
-
-    const addNewStop = () => {
-        if (wayPoints.length !=0 && document.getElementById(`${count-1}`).value === "") {
-            return
-        }
-
-        setCount(count+1)
+    function updateWaypoints() {
         let data = [...wayPoints]
         for(var i = 0; i < count; i++) {
-            data[i] = document.getElementById(`${i}`).value
+            data[i] = {location: document.getElementById(`${i}`).value}
         }
-        setWayPoints([...data, ''])
+        setWayPoints([...data])
+        return data
+    }
+
+    const addStop = () => {
+        if (originRef.current.value === "") {
+            return
+        }
+        updateWaypoints()
+        setCount(count+1)
     }
 
     console.log(count);
     console.log(wayPoints);
-    // console.log(document.getElementById(1).value);
     return(
         <div className={style.create_page} style={{height:'88vh'}}>
             <div className={style.dashboard}>
@@ -79,9 +76,9 @@ const Create = (props) => {
                         <Autocomplete>
                             <input type="text" id="from" ref={originRef} placeholder="Enter Starting Location"/>
                         </Autocomplete>
-                        {wayPoints.map((input, index) => {
+                        {Array(count).fill().map((input, index) => {
                                 return(
-                                    <Autocomplete key={index} >
+                                    <Autocomplete key={index}>
                                         <input type="text" id={index} placeholder="Enter Stop"/>
                                     </Autocomplete>
                                 )
@@ -91,14 +88,16 @@ const Create = (props) => {
                             <input type="text" id="from" ref={destinationRef} placeholder="Enter Ending Location"/>
                         </Autocomplete>
 
-                        <div className={style.add} onClick={addNewStop}>
+                        <div className={style.add} onClick={addStop}>
                             <FaPlus/>
                         </div>
                 </div>
                 <div className={style.block}/>
-                <button onClick={calculateRoute}>Calculate Route</button>
-                <h3>Distance: {distance}</h3>
-                <h3>Duration: {duration}</h3>
+                <div className={style.calc}>
+                    <button onClick={calculateRoute}>Calculate Route</button>
+                    <h3>Distance: {distance}</h3>
+                    <h3>Duration: {duration}</h3>
+                </div>
             </div>
 
             <GoogleMap 
